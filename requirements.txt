@@ -1,0 +1,5 @@
+fasttext
+text-to-speech
+speechrecognition
+pyaudio
+numpy
