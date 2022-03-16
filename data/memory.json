@@ -1,0 +1,6 @@
+{
+    "spegni la luce": "echo ok, spengo la luce",
+    "accendi la luce": "echo ok, accendo la luce",
+    "fantastico": "echo grazie",
+    "_": "echo non ho capito"
+}

@@ -6,10 +6,10 @@ from lib.Engine import Engine
 
 def main():
     engine = Engine({
-        'ears': Ears(),
-        'voice': Voice(),
-        'memory': Memory(),
-        'brain': Brain()
+        'ears': Ears,
+        'voice': Voice,
+        'memory': Memory,
+        'brain': Brain
     })
 
     engine.run()

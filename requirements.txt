@@ -3,3 +3,4 @@ text-to-speech
 speechrecognition
 pyaudio
 numpy
+playsound
