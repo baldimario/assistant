@@ -11,14 +11,11 @@ class Brain:
         self.m_ft = fasttext.load_model('cc.it.300.bin')
         self.m_hooks = self.m_memory.get_hooks()
         self.m_hooks_vec = [self.sentence2vec(hook) for hook in self.m_hooks if hook is not '_']
-        print('ready')
+        print('Ready.')
 
     def sentence2vec(self, sentence):
         words = [self.m_ft[word] for word in sentence.split(' ') if word in self.m_ft.words]
-        if len(words) > 1:
-            return np.mean(words, axis=0)
-        else:
-            return words[0]
+        return np.mean(words, axis=0)
 
     def recall(self, phrase_vec):
         distances = [np.linalg.norm(phrase_vec - hook_vec) for hook_vec in self.m_hooks_vec]

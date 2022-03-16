@@ -4,6 +4,7 @@
     "accendi il tunnel": "echo 'ok, accendo la vpn'; scripts/vpn-up &> /dev/null;",
     "spegni il tunnel": "echo 'ok, spengo la vpn'; scripts/vpn-down &> /dev/null;",
     "stato del tunnel": "scripts/vpn-ls",
+    "ciao": "echo ciao a te",
     "fantastico": "echo grazie",
     "_": "echo non ho capito"
 }

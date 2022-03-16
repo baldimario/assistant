@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+OTP=$(zenity --entry --text "Enter OTP"); printf "$VPN_USERNAME\n$VPN_PASSWORD\n$OTP\n" | openvpn3 session-start --config $VPN_CONFIG_FILE

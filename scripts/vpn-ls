@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+A=$(openvpn3 sessions-list | grep 'Path';)
+if [ $? = 0 ]; then echo 'vpn attiva'; else echo 'vpn disattiva'; fi;

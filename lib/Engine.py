@@ -15,8 +15,11 @@ class Engine:
                 words = words[1:]
                 state = True
             
-            if state == True and len(words) > 1:
+            print(f'[{1 if state else 0}]> {" ".join(words)}')
+
+            if state == True and len(words) > 0:
                 phrase = ' '.join(words)
                 sentence = self.m_brain.think(phrase)
+                print(f'- {sentence}')
                 self.m_voice.speak(sentence)
                 state = False

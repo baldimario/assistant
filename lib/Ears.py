@@ -13,6 +13,6 @@ class Ears:
             while True:
                 audio = self.m_recognizer.listen(source)
                 try:
-                    yield self.m_recognizer.recognize_google(audio, language=self.m_language)
+                    yield self.m_recognizer.recognize_google(audio, language=self.m_language).lower()
                 except:
                     continue

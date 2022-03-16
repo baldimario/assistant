@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+openvpn3 session-manage --disconnect --config $VPN_CONFIG_FILE
+
+
