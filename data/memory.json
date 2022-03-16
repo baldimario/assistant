@@ -6,5 +6,6 @@
     "stato del tunnel": "scripts/vpn-ls",
     "ciao": "echo ciao a te",
     "fantastico": "echo grazie",
+    "apri il browser": "google-chrome",
     "_": "echo non ho capito"
 }
