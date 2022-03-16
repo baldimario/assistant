@@ -1,6 +1,8 @@
 {
     "spegni la luce": "echo ok, spengo la luce",
     "accendi la luce": "echo ok, accendo la luce",
+    "accendi il tunnel": "echo 'ok, accendo la vpn'; ~/.scripts/vpn-up &> /dev/null;",
+    "spegni il tunnel": "echo 'ok, spengo la vpn'; ~/.scripts/vpn-down &> /dev/null;",
     "fantastico": "echo grazie",
     "_": "echo non ho capito"
 }
